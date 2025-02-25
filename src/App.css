@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -40,3 +42,22 @@
 .read-the-docs {
   color: #888;
 }
+
+.card-container{
+
+  background-color: #000;
+
+}
+
+
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+

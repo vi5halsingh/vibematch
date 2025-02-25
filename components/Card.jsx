@@ -5,7 +5,8 @@ function Card({ values, index, friendOnClick, friend, likeOnClick }) {
 
   return (
     <>
-      <div className=' hover:mix-blend-overlay w-64 rounded-md  '>
+   
+      <div className='card-container hover:mix-blend-overlay w-full rounded-md '>
 
         <div className='rounded-md  hover:mix-blend-overlay w-full h-35'>
           <div className='w-full p-2 bg-slate-400 rounded-md'>
@@ -21,6 +22,7 @@ function Card({ values, index, friendOnClick, friend, likeOnClick }) {
           </div>
         </div>
       </div>
+  
     </>
   )
 }

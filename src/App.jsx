@@ -3,9 +3,10 @@ import NavBar from '../components/NavBar';
 import Box from '../components/Box';
 import SongBar from '../components/SongBar';
 import Array from '../components/ArrayEx';
-import Card from '../components/card';
+import Card from '../components/Card';
 import { FaPlayCircle } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa";
+import './new.css'
 
 export default function App() {
   const data = [
@@ -85,12 +86,10 @@ export default function App() {
     <div className='bg-slate-600 w-50'>
       <NavBar/>
       <div className='pt-20'>
-
       <Box/>
       </div>
-      <SongBar />
-      
-      <div className='w-full flex align-center justify-center gap-5 shadow-2xl  shadow-black p-5 overflow-auto '>
+      <SongBar/>
+      <div className='w-full flex align-center justify-center gap-5 shadow-2xl  shadow-black p-5 overflow-auto'>
         {newData.map((item, index) => (
           <Card values={item} friend={item.friend} key={index} index={index} friendOnClick={hendleFrinedStatus} likeOnClick ={handleLike}/>
         ))
